@@ -7,6 +7,51 @@
       <title>Знакомство в html тегами ч.3</title>
    </head>
    <body>
+      <form action="#" method="post" enctype="multipart/form-data"></form>
       
+      <div>
+      <input placeholder="Your Name" type="text" name="username" value="" />
+      </div>
+
+      <div>
+      <input type="password" name="userpass" value="" />
+      </div>
+   
+      <div>
+         <p><input tabindex="2" checked type="radio" name="beer" value="lager" />Светлое</p>
+         <p><input tabindex="2" type="radio" name="beer" value="dark" />Темное</p>
+      </div>
+      <br>
+      <div>
+         <p><input type="radio" name="beer2" value="lager" />Светлое</p>
+         <p><input checked type="radio" name="beer2" value="dark" />Темное</p>
+      </div>
+      <br>
+      <div>
+         <p><input type="checkbox" name="car" value="yes">Наличие авто</p>
+         <p><input checked type="checkbox" name="car2" value="yes">Наличие авто 2</p>
+         <p><input type="checkbox" name="car3" value="yes">Наличие авто 3</p>
+         <p><input checked type="checkbox" name="car4" value="yes">Наличие авто 4</p>
+      </div>
+      <br>
+      <div>
+         <p><input type="file" name="foto"></p>
+      </div>
+      <br>
+      <div>
+      <textarea name="text"></textarea>
+      </div>
+      <br />
+      <div>
+         <select name="color">
+            <option value="red">Красный</option>
+            <option selected value="yellow">Желтый</option>
+            <option value="blue">Голубой</option>
+         </select>
+      </div>
+      <br>
+      <div>
+         <button type="submit" >Отправить</button>
+      </div>
    </body>
 </html>
