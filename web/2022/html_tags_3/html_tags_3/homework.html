@@ -7,7 +7,8 @@
    <title>Testform</title>
 </head>
    <body>
-      <form action="#" method="get" >
+      <!--<form action="#" method="get" > Запрос GET передает данные в URL в виде пар "имя-значение" (другими словами, через ссылку), а запрос POST передает данные в теле запроса -->
+      <form action="#" method="post" enctype="multipart/form-data">
          <div>
             <p>Имя</p>
             <input placeholder="Name" tabindex="1" name="username" type="text" />
@@ -35,32 +36,32 @@
                <input checked tabindex="5" type="checkbox" name="bike" value="yes">Велосипед
             </div>
             <div>
-               <input tabindex="5" type="checkbox" name="auto" value="yes">Автомобиль
+               <input tabindex="6" type="checkbox" name="auto" value="yes">Автомобиль
              </div>
              <div>
-               <input tabindex="5" type="checkbox" name="house" value="yes">Квартира
+               <input disabled tabindex="7" type="checkbox" name="house" value="yes">Квартира
              </div>   
          </div>
          <div>
             <p>Дополнительная информация</p>
-            <textarea tabindex="6" name="text"></textarea>
+            <textarea tabindex="8" name="text"></textarea>
          </div>
          <div>
             <p>Прикрепить фото</p>
-            <input tabindex="7" type="file">
+            <input tabindex="9" type="file" name="userfoto">
          </div>
          <div>
-            <br>
-            <select tabindex="8" name="color">
+            <p>Любимый цвет</p>
+            <select tabindex="10" name="color">
                <option value="black">Черный</option>
                <option value="yellow">Желтый</option>
-               <option value="blue">Голубой</option>
+               <option selected value="blue">Голубой</option>
             </select>
          </div>
          <div>
             <p>Действия</p>
-            <button tabindex="9" type="submit">Отправить</button>
-            <button tabindex="9" type="reset">Очистить</button>
+            <button tabindex="11" type="submit">Отправить</button>
+            <button tabindex="12" type="reset">Очистить</button>
          </div>
       </form>
    </body>
