@@ -39,12 +39,12 @@ img {vertical-align: top;}
 h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
 
 .example-block {
-   min-width: 500px;
+   height: 50%;
    border: 1px solid #000;
 }
 .example-string {
    
 }
 .example-image {
-  width: 100px; 
+
 }
