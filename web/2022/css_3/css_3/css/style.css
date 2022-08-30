@@ -38,3 +38,28 @@ img {vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
 
+.body {
+   padding: 20px;
+}
+
+.one {
+   line-height: 25px;
+   margin: 0 0 30px;
+   border: 1px solid #000
+}
+
+.two {
+   display: block;
+   border: 1px solid #000
+}
+
+.three {
+   display: block;
+   box-sizing: content-box;
+   padding: 0 0 0 30px;
+   margin: 0 0 20px;
+}
+
+.four {
+   
+}
