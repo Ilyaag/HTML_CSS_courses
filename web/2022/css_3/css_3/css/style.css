@@ -45,12 +45,10 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
 .one {
    line-height: 25px;
    margin: 0 0 30px;
-   border: 1px solid #000
 }
 
 .two {
    display: block;
-   border: 1px solid #000
 }
 
 .three {
@@ -61,5 +59,33 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
 }
 
 .four {
-   
+   min-height: 100px;
+   width: 1500px;
+}
+
+.five {
+   display: inline;
+}
+
+.five2 {
+   display: inline;
+   line-height: 25px;
+   padding: 0 0 0 20px;
+}
+
+.six {
+   display: inline;
+   margin: 0 10px 0 0;
+   padding: 0 30px 0 30px;
+}
+
+.seven {
+   display: inline;
+   margin: 0 0 30px;
+   padding: 0 30px 0 0px;
+}
+
+.eight {
+   display: block;
+   padding: 30px 0 30px 0;
 }
