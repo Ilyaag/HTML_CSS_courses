@@ -39,13 +39,21 @@ img {vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
 /*----------------------------------------*/
-body {}
 
-.one {}
+body {
+
+   background: url('../img/Ellipse\ 1\ copy.png') 10%/cover no-repeat, url('../img/Layer\ 0.png') 0 0/100% 100% no-repeat; 
+}
+
+.one {
+   text-transform: uppercase;
+}
 
 .two {}
 
-.example-image {}
+.example-image {
+   width: 50%;
+}
 
 .three {}
 
