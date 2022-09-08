@@ -109,16 +109,23 @@ body {
 }
 
 .content-bottom-info {}
-.content-bottom-info-list {  
+.content-bottom-info-list {
+   margin: 0 0 59px 0;
 }
 
 .content-bottom-info-list li{  
    font-family: Arial, Helvetica, sans-serif; 
    font-size: 20px; 
-   margin: 0 0 13px 0;
+   margin: 0 0 15px 0;
    background: url('../img/icons/check\ icon.png') left no-repeat;
    padding: 0 0 0 35px;
 }
+
+.content-bottom-info-list li:last-child{
+   margin: 0;
+}
+
+
 .content-bottom-info-list li:nth-child(1){ 
    text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.3);
    color: #273d46;    
@@ -140,4 +147,22 @@ body {
    opacity: 1;
 }
 .content-bottom-info_link {
+   background-color: #80b7b3;
+   height: 44px;
+   display: inline-block; /*это кнопка, строчный тег не действуют высоты, поэтому мы еще должны к высоте добавить это*/
+   line-height: 44px;
+   padding: 0 30px 0 27px;
+   border-radius: 30px;
+   box-shadow: 0px 6px 40px 0 rgba(128, 183, 179, 0.54);
+   font-family: Arial, Helvetica, sans-serif;
+   color: #fff;
+   text-transform: uppercase;
+   letter-spacing: 2.8px;
+   font-size: 14px;
 }
+
+.content-bottom-info_link span {
+   background: url('../img/icons/Shape\ 2.png') right no-repeat
+}
+
+ОСТАНОВИЛСЯ ТУТ НА КНОПКЕ!
