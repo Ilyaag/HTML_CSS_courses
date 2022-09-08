@@ -41,28 +41,44 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
 /*----------------------------------------*/
 
 body {
-
+   padding: 40px 80px 40px 80px;
    background: url('../img/Ellipse\ 1\ copy.png') 10%/cover no-repeat, url('../img/Layer\ 0.png') 0 0/100% 100% no-repeat; 
 }
 
 .one {
+   text-align: center;
    text-transform: uppercase;
 }
 
-.two {}
-
-.example-image {
-   width: 50%;
+.two {
+   text-align: center;
 }
 
-.three {}
+.example-image {
+   border: 5px solid #ffffff;
+   margin: 0 0 40px;
+}
 
-.four {}
+.three {
+   margin: 0 0 30px;
+}
 
-.list-1 {}
+.four {
+   margin: 0 0 30px;
+}
 
-.list-2 {}
+.list-1 {
+   margin: 0 0 10px;
+}
 
-.list-3 {}
+.list-2 {
+   margin: 0 0 10px;
+}
 
-.list-4 {}
+.list-3 {
+   margin: 0 0 10px;
+}
+
+.list-4 {
+   margin: 0 0 10px;
+}
