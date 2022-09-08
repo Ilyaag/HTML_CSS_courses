@@ -41,44 +41,70 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
 /*----------------------------------------*/
 
 body {
-   padding: 40px 80px 40px 80px;
-   background: url('../img/Ellipse\ 1\ copy.png') 10%/cover no-repeat, url('../img/Layer\ 0.png') 0 0/100% 100% no-repeat; 
+   background-color: #e8e8e8; /*Добавил серый цвет в заливку*/
 }
 
-.one {
+.content {
+   padding: 168px 0 137px 0; /*Отступы 106 сверху и 137 снизу*/
+   max-width: 821px; /*ограничение по ширине*/
+   margin: 0px auto; /*внешний отступ на всех четырех сторонах элемента*/
+}
+
+
+.content-top {
    text-align: center;
+   margin: 0 0 77px 0;
+}
+
+.content-top_category {
+   opacity: 0.6;
+   color: rgba(39, 61, 70, 0.6);
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 14px;
    text-transform: uppercase;
+   letter-spacing: 2.8px;
+   margin: 0 0 10px 0;
+  
 }
 
-.two {
-   text-align: center;
+.content-top_title {
+   line-height: 50px;
+   font-size: 36px;
+   color: #273d46;
+   max-width: 725px; /*73 74 строка делаем по пиксель перфект ширину как в макете и центруем*/
+   margin: 0 auto;
 }
 
-.example-image {
-   border: 5px solid #ffffff;
-   margin: 0 0 40px;
+
+.content-image {
+   box-shadow: 0px 15px 65px 0 rgba(15, 16, 16, 0.15);
+   background-color: #fff;
+   padding: 10px;
+
 }
 
-.three {
-   margin: 0 0 30px;
+.content-image img{ /*обратился напрямую к картинке и указал что ты не сможешь быть больше 100% родителя. Для чего - если заказчик поменяет картинку, чтобы она подстроилась под верстку а не сломалась*/
+   max-width: 100%;
 }
 
-.four {
-   margin: 0 0 30px;
+
+.content-bottom {
+   padding: 0 45px;
 }
 
-.list-1 {
-   margin: 0 0 10px;
+.content-bottom_text {
+  font-size: 24px;
+  line-height: 40px;
+  color: rgba(39, 61, 70, 0.8)
 }
 
-.list-2 {
-   margin: 0 0 10px;
+.content-bottom_text p{
+   margin: 0 0 45px 0;
 }
 
-.list-3 {
-   margin: 0 0 10px;
+.content-bottom-info {
 }
-
-.list-4 {
-   margin: 0 0 10px;
+.content-bottom-info-list {
+}
+.content-bottom-info_link {
 }
