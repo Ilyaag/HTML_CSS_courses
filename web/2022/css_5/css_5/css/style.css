@@ -41,7 +41,7 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
 /*----------------------------------------*/
 
 body {
-   background-color: #e8e8e8; /*Добавил серый цвет в заливку*/
+   background: #e8e8e8 url('../img/Ellipse\ 1\ copy.png') 50% 150px no-repeat;
 }
 
 .content {
@@ -162,5 +162,6 @@ body {
 }
 
 .content-bottom-info_link span {
+   padding: 0 30px 0 0;
    background: url('../img/icons/Shape\ 2.png') right no-repeat
 }
