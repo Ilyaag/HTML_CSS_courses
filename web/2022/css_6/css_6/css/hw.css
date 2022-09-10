@@ -44,9 +44,50 @@ body {
    background-color: #e8e8e8;
 }
 
+
+
 .content-bottom-info {
+   padding: 123px 0 0 223px;
 }
-.content-bottom-info_list {
+
+
+.content-bottom-info_list li {
+   font-family: Arial, Helvetica, sans-serif; 
+   font-size: 20px; 
+   margin: 0 0 15px 0;
+   background: url('../img/icons/check\ icon.png') left no-repeat;
+   padding: 0 0 0 35px;
+   color: #273d46;
 }
+.content-bottom-info_list li:nth-child(1) {
+   text-decoration: line-through;
+}
+.content-bottom-info_list li:nth-child(2) {
+   font-weight: 700;
+}
+.content-bottom-info_list li:nth-child(3) {
+   font-style: italic;
+}
+.content-bottom-info_list li:nth-child(4) {
+   text-transform: uppercase;
+}
+
+
+
 .content-bottom-button {
+   font-family: Arial, Helvetica, sans-serif;
+   background-color:rgba(128, 183, 179, 0.54);
+   color: #fff;
+   height: 44px;
+   width: 170px;
+   display: inline-block;
+   line-height: 2.86;
+   letter-spacing: 2.8px;
+   font-size: 14px;
+   border-radius: 30px;
+}
+
+.content-bottom-button span {
+   padding: 17px 30px 17px 30px;
+   background: url('../img/icons/Shape\ 2.png') right no-repeat;
 }
