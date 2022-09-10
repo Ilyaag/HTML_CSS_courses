@@ -45,7 +45,6 @@ body {
 }
 
 
-
 .content-bottom-info {
    padding: 123px 0 0 223px;
 }
@@ -56,7 +55,7 @@ body {
    font-size: 20px; 
    margin: 0 0 15px 0;
    background: url('../img/icons/check\ icon.png') left no-repeat;
-   padding: 0 0 0 35px;
+   padding: 0 0 0 30px;
    color: #273d46;
 }
 .content-bottom-info_list li:nth-child(1) {
@@ -72,8 +71,19 @@ body {
    text-transform: uppercase;
 }
 
-
-
+.content-bottom-info_list li:hover:nth-child(1) {
+   text-decoration: none;
+}
+.content-bottom-info_list li:hover:nth-child(2) {
+   color: #d55a5a;
+   background: url('../img/icons/check-icon-red.png') left no-repeat;
+}
+.content-bottom-info_list li:hover:nth-child(3) {
+   font-style: normal;
+}
+.content-bottom-info_list li:hover:nth-child(4) {
+   text-transform: none;
+}
 
 
 
@@ -97,6 +107,14 @@ body {
    background: url('../img/icons/Shape\ 2.png') right no-repeat;
 }
 
+.content-bottom-button:hover {
+   box-shadow: 0px 6px 40px 0 rgba(128, 183, 179, 0.54);
+   background-color: #3a5856;
+}
+.content-bottom-button:active {
+   background-color:gray;
+}
+
 
 .text_input {
    margin: 100px 0 0 0;
@@ -105,4 +123,7 @@ body {
    width: 292px;
    padding: 0px 15px;
    font-size: 18px;
+}
+.text_input:focus {
+   box-shadow: 0 0 20px rgba(127, 190, 213, 0.93);
 }
