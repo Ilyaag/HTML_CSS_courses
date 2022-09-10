@@ -74,20 +74,35 @@ body {
 
 
 
+
+
+
 .content-bottom-button {
-   font-family: Arial, Helvetica, sans-serif;
-   background-color:rgba(128, 183, 179, 0.54);
-   color: #fff;
    height: 44px;
-   width: 170px;
    display: inline-block;
-   line-height: 2.86;
-   letter-spacing: 2.8px;
+   line-height: 44px;
+   padding: 0 30px;
+   border-radius: 24px;
+   background-color:rgba(128, 183, 179, 0.54);
+   box-shadow: 0 6px 20px rgba(128, 183, 179, 0.54);
+   font-family: Arial, Helvetica, sans-serif;
+   color: #fff;
    font-size: 14px;
-   border-radius: 30px;
+   text-transform: uppercase;
+   letter-spacing: 2.8px;
+   margin: 100px 0 0 0;
+}
+.content-bottom-button span {
+   padding: 0 30px 0 0;
+   background: url('../img/icons/Shape\ 2.png') right no-repeat;
 }
 
-.content-bottom-button span {
-   padding: 17px 30px 17px 30px;
-   background: url('../img/icons/Shape\ 2.png') right no-repeat;
+
+.text_input {
+   margin: 100px 0 0 0;
+   border: 1px solid #b0b0b0;
+   height: 50px;
+   width: 292px;
+   padding: 0px 15px;
+   font-size: 18px;
 }
