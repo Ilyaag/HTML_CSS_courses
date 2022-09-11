@@ -40,104 +40,56 @@ img {vertical-align: top;}
 h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
 /*----------------------------------------*/
 
-body{
-   padding: 30px;
+body {
+   background-color: #e8e8e8;
 }
 
-.block {
-   margin: 0 0 30px 0;
+.content {
+   padding: 123px 0 0 291px;
+   max-width: 900px;
 }
-.block p:nth-child(odd) {
-   background-color:yellow;
-}
-.block p:nth-child(even) {
-   background-color:grey;
+.content-header {
 }
 
-.block p{
-   font-size: 18px;
-   line-height: 24px;
-   margin: 0 0 20px 0;
-}
-
-
-.link {
-   color: red;
-}
-
-/*взаимодействует при наведении*/
-.link:hover { 
-   text-decoration: underline;
-   color:blue;
-}
-/*Срабатывает для посещенных ссылок*/
-.link:visited {
-   color: #008000;
-}
-
-/*срабатывает в момент клика*/
-.link:active {
-   color: yellow;
-}
-
-
-
-.text_input {
-   border: 1px solid #666;
-   height: 50px;
-   padding: 0px 15px;
-   font-size: 18px;
-   width: 300px;
-   margin: 0 0 10px 0;
-}
-/*Срабатывает при получении элементом фокуса. Часто применяется к элементам форм. Например инпутам.
-*/
-.text_input:focus {
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-
-.text_button {
-   display: block;
-   width: 300px;
-   height: 50px;
-   background-color: #666;
-   font-size: 18px;
-   color: #fff;
-   text-transform: uppercase;
-   margin: 0 0 30px 0;
-}
-
-.text_button:hover {
-   background-color: #333;
-   color: yellow;
-}
-
-.text_button:active {
-   background-color: #fff;
-   color: #333;
-}
-
-.list {
-}
-
-.list li{
-   font-size: 18px;
-   margin: 0 0 15px 0;
+.content-header-list li {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   line-height: 1.8;
+   color: #273d46;
+   padding: 0 0 0 31px;
+   background: url('../img/icons/check\ icon.png') left no-repeat;
 
 }
-
-/*ПСЕВДОКЛАССЫ. Обращение к первому элементу в блоке*/
-.list li:first-child {
-   color: green;
+.content-header-list li:nth-child(1) {
+   text-decoration: line-through;
 }
-/*Обращение к последнему элементу в блоке*/
-.list li:last-child {
-   color:blue;
+.content-header-list li:nth-child(2) {
    font-weight: 700;
 }
+.content-header-list li:nth-child(3) {
+   font-style: italic;
+}
+.content-header-list li:nth-child(4) {
+   text-transform: uppercase;
+}
 
-/*Обращение к конкретным элементам в блоке*/
-.list li:nth-child(4) {
-   text-decoration: underline;
+.content-header-button {
+   height: 44px;
+   display: inline-block;
+   line-height: 44px;
+   padding: 0 30px;
+   border-radius: 24px;
+   background-color:rgba(128, 183, 179, 0.54);
+   box-shadow: 0 6px 20px rgba(128, 183, 179, 0.54);
+   font-family: Arial, Helvetica, sans-serif;
+   color: #fff;
+   font-size: 14px;
+   text-transform: uppercase;
+   letter-spacing: 2.8px;
+   margin: 137px 0 0 0;
+}
+
+.content-header-button span{}
+
+.content-body {
 }
