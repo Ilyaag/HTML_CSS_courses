@@ -80,7 +80,7 @@ body {
 .content-header-list li::after{
    content: '';
 }
-
+{}
 
 
 .content-header-button {
