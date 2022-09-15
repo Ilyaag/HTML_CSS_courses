@@ -79,7 +79,7 @@ body {
 
 /*Есть вопросы к отображению*/
 .content-header-list li:hover:nth-child(2) {
-   content: none;
+   /*content: none; нужно ли проверь*/
    color: #d55a5a;
    background: url('../img/icons/check-icon-red.png') left no-repeat;
 }
@@ -117,13 +117,28 @@ body {
    margin: 137px 0 0 0;
 }
 
-.content-header-button span:hover::after
+.content-header-button:hover{
+   box-shadow: 0px 6px 40px 0 rgba(128, 183, 179, 0.54);
+   background-color: #3a5856;
+}
+.content-header-button:active {
+   background-color:gray;
+}
 
-
+.content-header-button span::before{
+   content: '';
+}*
+.content-header-button span::after{
+   content: '';
+   padding: 0 30px 0 0;
+   background:url('../img/icons/Shape\ 2.png') right no-repeat;
+}
+/*
 .content-header-button span {
    padding:0 30px 0 0;
    background:url('../img/icons/Shape\ 2.png') right no-repeat;
 }
+*/
 
 .content-body {
    margin: 40px 0 0 0;
