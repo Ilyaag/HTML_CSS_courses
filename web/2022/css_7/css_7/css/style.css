@@ -73,15 +73,33 @@ body {
    text-transform: uppercase;
 }
 
+.content-header-list li:hover:nth-child(1) {
+   text-decoration: none;
+}
+
+/*Есть вопросы к отображению*/
+.content-header-list li:hover:nth-child(2) {
+   content: none;
+   color: #d55a5a;
+   background: url('../img/icons/check-icon-red.png') left no-repeat;
+}
+.content-header-list li:hover:nth-child(3) {
+   font-style: normal;
+}
+.content-header-list li:hover:nth-child(4) {
+   text-transform: none;
+}
+
+
 .content-header-list li::before{
    content:url(../img/icons/check\ icon.png);
    margin: 0 9px 0 0;
 }
+
+/*Нужно ли?*/
 .content-header-list li::after{
    content: '';
 }
-{}
-
 
 .content-header-button {
    height: 44px;
@@ -98,6 +116,9 @@ body {
    letter-spacing: 2.8px;
    margin: 137px 0 0 0;
 }
+
+.content-header-button span:hover::after
+
 
 .content-header-button span {
    padding:0 30px 0 0;
