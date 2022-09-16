@@ -46,27 +46,22 @@ body {
    background-color: #fff;
 }
 
-.block {
-   border: 5px solid red;
-   max-width: 800px;
-   margin: 0px auto;
-   height: 800px;
-}
-
-.block div{
-   line-height: 50px;
+.list {
    font-size: 18px;
-   font-weight: 700;
-   text-align: center;
 }
 
-.block_1 {
-   background-color: rgb(247, 245, 131);
+.list li {
+   margin: 0 0 10px 0;
+   position: relative;
+   padding: 0 0 0 25px;
 }
-.block_2 {
-   background-color: rgb(155, 12, 238);
-   color:#fff;
-}
-.block_3 {
-   background-color: rgb(17, 245, 233);
+
+.list li::before {
+   content: '';
+   background:url('../img/icons/check\ icon.png') 0 0 no-repeat;
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   top: 0px;
+   left: 0;
 }
