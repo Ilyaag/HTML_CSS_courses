@@ -40,3 +40,33 @@ img {vertical-align: top;}
 h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
 /*----------------------------------------*/
 
+body {
+   padding: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #fff;
+}
+
+.block {
+   border: 5px solid red;
+   max-width: 800px;
+   margin: 0px auto;
+   height: 800px;
+}
+
+.block div{
+   line-height: 50px;
+   font-size: 18px;
+   font-weight: 700;
+   text-align: center;
+}
+
+.block_1 {
+   background-color: rgb(247, 245, 131);
+}
+.block_2 {
+   background-color: rgb(155, 12, 238);
+   color:#fff;
+}
+.block_3 {
+   background-color: rgb(17, 245, 233);
+}
