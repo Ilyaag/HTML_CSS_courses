@@ -1,29 +1,31 @@
-/*Обнуление*/
-*{padding: 0;margin: 0;border: 0;}
-*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-nav,footer,header,aside{display: block;}
-html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
-input,button,textarea{font-family:inherit;}
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding:0;border:0;}
-a,a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
-/*--------------------*/
+//импорт других файлов стилей
+@import "nullstyle.scss";
+
+//переменные
+$fz:80px;
+$color_1:green;
+//Шаблоны
+%tplborder {
+   border-bottom: 5px dashed red;
+}
+//миксины
+@mixin fontz($f,$c) {
+   font-size: $f;
+   color: $c;
+}
 
 .block {
+   //математика
+   width: 300px / 960px * 100%;
+   background-color: #666;
    padding: 30px;
    font-size: 30px;
    line-height: 60px;
    .block_text {
-      font-size: 80px;
+      font-size: $fz;
       span {
-         color: green;
+         color: $color_1;
+         ;
       }
    }
 }
@@ -31,8 +33,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .link {
    color: blue;
    text-decoration: underline;
-   //обращаемся к классу напрямую
+   font-size: $fz;
+   .block &{
+      font-size: $fz;
+   }
    &:hover{
       color:green;
    }
+   @extend %tplborder;
+}
+
+.link-2 {
+   @include fontz(50px, green);
+   border-bottom: 5px dashed #000;
+   @extend %tplborder;
 }
