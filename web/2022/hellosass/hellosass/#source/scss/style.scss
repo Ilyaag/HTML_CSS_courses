@@ -1,10 +1,10 @@
-//импорт других файлов стилей
+//файл обнуляющих стилей
 @import "nullstyle.scss";
 
-//переменные
+//переменные для блока
 $fz:80px;
 $color_1:green;
-//Шаблоны
+//Шаблон №1
 %tplborder {
    border-bottom: 5px dashed red;
 }
