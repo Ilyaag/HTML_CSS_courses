@@ -20,11 +20,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
    padding: 30px;
    font-size: 30px;
    line-height: 60px;
-   span {
-      color: green;
-   }
    .block_text {
       font-size: 80px;
+      span {
+         color: green;
+      }
    }
 }
-// Закончил на 7.46
+
+.link {
+   color: blue;
+   text-decoration: underline;
+   //обращаемся к классу напрямую
+   &:hover{
+      color:green;
+   }
+}
