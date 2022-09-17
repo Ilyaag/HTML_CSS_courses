@@ -78,9 +78,17 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   line-height: 60px;
 }
-.block span {
-  color: green;
-}
 .block .block_text {
   font-size: 80px;
+}
+.block .block_text span {
+  color: green;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+}
+.link:hover {
+  color: green;
 }
