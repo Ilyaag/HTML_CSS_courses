@@ -1,8 +1,52 @@
+//подключение шрифта через google fonts
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+@font-face {
+	font-family: 'PFDinTextCondPro';
+	src: url('../fonts/pfdintextcondpro-regular.eot');
+	src: local('☺'), url('../fonts/pfdintextcondpro-regular.woff') format('woff'), url('../fonts/pfdintextcondpro-regular.ttf') format('truetype'), url('../fonts/8pfdintextcondpro-regular.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'PFDinTextCondPro';
+	src: url('../fonts/pfdintextcondpro-medium.eot');
+	src: local('☺'), url('../fonts/pfdintextcondpro-medium.woff') format('woff'), url('../fonts/pfdintextcondpro-medium.ttf') format('truetype'), url('../fonts/pfdintextcondpro-medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
 //файл обнуляющих стилей
 @import "nullstyle.scss";
 
-.text {
+.textoriginal {
+   margin: 0 0 30px 0;
    font-size: 30px;
    line-height: 35px;
    p {margin: 0 0 30px 0;}
+}
+
+.text {
+   font-family: "PT Sans";
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 35px;
+   p {margin: 0 0 30px 0;}
+}
+
+.text-PFDin {
+   font-family: 'PFDinTextCondPro';
+   font-size: 30px;
+   line-height: 35px;
+   margin: 0 0 30px 0;
+   p{margin: 0 0 30px 0;}
+}
+.text-PDFInMedium {
+   font-family: 'PFDinTextCondPro';
+   font-weight: 500;
+   font-style: italic;
+   font-size: 30px;
+   line-height: 35px;
+   margin: 0 0 30px 0;
+   p{margin: 0 0 30px 0;}
 }
