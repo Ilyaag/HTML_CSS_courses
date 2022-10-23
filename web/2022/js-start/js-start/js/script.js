@@ -42,3 +42,7 @@ console.log(myFunction('Илья'))
 console.log(myFunction('Андрей'))*/
 
 
+//Задача 9 стрелочная функция
+//let имя переменной = (параметр, ..параметр) => выражение
+const strelFunction = () => 'Привет, мир!' //неявный возврат можно использовать когда 1 ВЫРАЖЕНИЕ
+console.log(strelFunction())
