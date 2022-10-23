@@ -44,5 +44,35 @@ console.log(myFunction('Андрей'))*/
 
 //Задача 9 стрелочная функция
 //let имя переменной = (параметр, ..параметр) => выражение
-const strelFunction = () => 'Привет, мир!' //неявный возврат можно использовать когда 1 ВЫРАЖЕНИЕ
+/*const strelFunction = () => {
+   return 'Привет, мир!' //явный возврат 
+}
 console.log(strelFunction())
+
+
+const strelFunction = () => 'Привет, мир!' //неявный возврат можно использовать когда 1 ВЫРАЖЕНИЕ
+console.log(strelFunction()) */
+
+
+//Задача 10 
+//комментарий перед функцией jsdock можем комментировать код в файлах js делается это путем добавления комментариев
+/**
+ * Возвращает разницу двух чисел
+ * @param {number} a 
+ * @param {number} b 
+ * @returns {number} разница чисел
+ */
+/*function diff(a, b) {
+   return a - b
+}
+diff(10, 5)*/
+
+
+//Задача 11 колбэк функции
+/*function printMyName () {
+   console.log('Ilya')
+}
+
+console.log('Start')
+setTimeout(printMyName, 2000)*/
+
