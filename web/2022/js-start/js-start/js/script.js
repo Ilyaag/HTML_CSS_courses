@@ -8,7 +8,7 @@ const personInfo2 = `Меня зовут так ${myName} ${mySurname} и я ${m
 а это вторая строка и следующая будет ниже
 третья вот`
 console.log(personInfo2) */
-// 6 задача Типы данных
+/* 6 задача Типы данных
 const strigSt = 'TestString'
 const numNum = 10
 const booleanNum = true
@@ -23,4 +23,11 @@ console.log(typeof booleanNum)
 console.log(typeof nullNum)
 console.log(typeof unNum)
 console.log(typeof object)
-console.log(typeof arrayNum)
+console.log(typeof arrayNum)*/
+//Задача 7 объявление и вызов функции
+function printMyName() {
+   let name = 'Ilya'
+   console.log(name)
+}
+
+printMyName() 
