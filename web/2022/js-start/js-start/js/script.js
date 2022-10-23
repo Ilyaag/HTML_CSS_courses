@@ -8,6 +8,7 @@ const personInfo2 = `Меня зовут так ${myName} ${mySurname} и я ${m
 а это вторая строка и следующая будет ниже
 третья вот`
 console.log(personInfo2) */
+
 /* 6 задача Типы данных
 const strigSt = 'TestString'
 const numNum = 10
@@ -24,10 +25,20 @@ console.log(typeof nullNum)
 console.log(typeof unNum)
 console.log(typeof object)
 console.log(typeof arrayNum)*/
+
 //Задача 7 объявление и вызов функции
-function printMyName() {
+/*function printMyName() {
    let name = 'Ilya'
    console.log(name)
 }
+printMyName()*/
 
-printMyName() 
+
+//Задача 8 Присваивание функции переменной
+/*const myFunction = function(name) {
+   return `Привет, ${name}`
+}
+console.log(myFunction('Илья'))
+console.log(myFunction('Андрей'))*/
+
+
