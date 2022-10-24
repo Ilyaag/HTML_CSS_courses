@@ -76,3 +76,5 @@ diff(10, 5)*/
 console.log('Start')
 setTimeout(printMyName, 2000)*/
 
+printMyName = () => console.log('Ilya')
+setTimeout(printMyName, 5000)
