@@ -85,7 +85,9 @@ let stroka = `My name ${object.name} ${object.surname} and my favorite number ${
 console.log(stroka)*/
 
 //Задача 13 Длина строки
-let stroka = 'Капитан кек'
+/* let stroka = 'Капитан кек'
 const dlinaStroki = stroka.length
 
-console.log(dlinaStroki)
+console.log(dlinaStroki) */
+
+//Задача 14 строка заглавными буквами
