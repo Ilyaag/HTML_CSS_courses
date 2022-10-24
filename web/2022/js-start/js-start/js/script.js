@@ -83,3 +83,9 @@ setTimeout(printMyName, 5000) */
 let stroka = `My name ${object.name} ${object.surname} and my favorite number ${object.favoriteNumber}`
 
 console.log(stroka)*/
+
+//Задача 13 Длина строки
+let stroka = 'Капитан кек'
+const dlinaStroki = stroka.length
+
+console.log(dlinaStroki)
