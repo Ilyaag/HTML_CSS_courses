@@ -69,12 +69,17 @@ diff(10, 5)*/
 
 
 //Задача 11 колбэк функции
-/*function printMyName () {
-   console.log('Ilya')
-}
-
-console.log('Start')
-setTimeout(printMyName, 2000)*/
-
+/*
 printMyName = () => console.log('Ilya')
-setTimeout(printMyName, 5000)
+setTimeout(printMyName, 5000) */
+
+
+//Задача 12 создание объекта
+/*const object = {
+   name: 'Ilya',
+   surname: 'Ageev',
+   favoriteNumber: 6
+}
+let stroka = `My name ${object.name} ${object.surname} and my favorite number ${object.favoriteNumber}`
+
+console.log(stroka)*/
