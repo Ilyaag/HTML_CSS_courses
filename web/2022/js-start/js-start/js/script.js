@@ -91,3 +91,9 @@ const dlinaStroki = stroka.length
 console.log(dlinaStroki) */
 
 //Задача 14 строка заглавными буквами
+const stroka = 'Это тестовая запись'
+
+console.log(stroka instanceof String)
+
+const strokaTest = (stroka.toUpperCase())
+console.log(strokaTest)
