@@ -99,6 +99,6 @@ const strokaTest = (stroka.toUpperCase())
 console.log(strokaTest) */
 
 //ЗАДАЧА 15 - Замена части строки
-/*const stroka = 'Good morning'
+const stroka = 'Good morning'
 const res = stroka.replace('morning', 'evning')
-console.log(res)*/
+console.log(res)
