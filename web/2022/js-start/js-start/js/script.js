@@ -20,6 +20,7 @@
     }
 
 Проверить, чтобы все работало без ошибок в консоли */
+
 "use strict";
 
 const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', ''); //команда задать вопрос пользователю
@@ -44,6 +45,3 @@ personalMovieDB.movies[c]=d;
 
 console.log(personalMovieDB);
 
-/*movies: {
-   'logan': '8.1'
-}*/
