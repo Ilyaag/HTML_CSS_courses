@@ -1,9 +1,4 @@
-const num = 101
-
-if (num < 49) {
-    console.log('ERROR');
-} else if (num > 100) {
-    console.log('Много');
-} else {
-    console.log('ok!');
-}
+while (num <= 55) { //первый вариант цикла. тикает счетчик пока число не станет <=55
+//     console.log(num);
+//     num++;
+// }
