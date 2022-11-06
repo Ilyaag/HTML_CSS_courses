@@ -9,3 +9,13 @@
 //    num++;
 // }
 
+// let num = 20;
+// do {
+//    console.log(num);
+//    num++;
+// }
+// while (num <= 30);
+
+// for (let i = 200; i <= 250; i++) {
+//    console.log(i);
+// }
