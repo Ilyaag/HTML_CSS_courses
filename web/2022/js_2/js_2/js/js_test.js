@@ -16,6 +16,6 @@
 // }
 // while (num <= 30);
 
-// for (let i = 200; i <= 250; i++) {
-//    console.log(i);
-// }
+for (let i = 200; i <= 250; i++) {
+   console.log(i);
+}
