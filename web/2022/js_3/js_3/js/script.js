@@ -89,10 +89,9 @@ console.log(personalMovieDB);
 
 function writeYourGenres() {
     for ( let i = 1; i <= 3; i++) {
-        const genre = prompt(`Ваш любимый жанр под номером ${i}`);
-        //вариант через квадратные скобки, по уроку
-        personalMovieDB.genres[i - 1] = genre;
+        personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`);
         //мой вариант
+        //const genre = prompt(`Ваш любимый жанр под номером ${i}`);
         //personalMovieDB.genres.push(genre);
     }
 }
