@@ -1,7 +1,8 @@
-for ( let i = 0; i < 2; i++) {
-    const a = prompt('Один из последних просмотренных фильмов?', ''),
-          b = prompt('На сколько оцените его?', '');
-    personalMovieDB.movies[a]=b;
-};
+function learnJS(lang, callback) {
+   console.log(`Я учу: ${lang}`);
+   callback();
+}
 
-console.log(personalMovieDB);
+learnJS(`JavaScript`, function() {
+   console.log(`Я прошел этот урок`);
+});
