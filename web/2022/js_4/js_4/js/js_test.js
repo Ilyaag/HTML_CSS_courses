@@ -1,4 +1,4 @@
-//коллбэк функция
+// //коллбэк функция
 'use strict';
 
 function first() {
@@ -25,3 +25,8 @@ function done() {
 }
 
 learnJS(`JavaScript`, done);
+
+
+
+
+//Объекты, деструктуризация объектов (ES6)
