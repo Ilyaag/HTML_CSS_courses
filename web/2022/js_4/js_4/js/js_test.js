@@ -94,7 +94,42 @@
 // console.log(counter);
 
 
-//функции и методы которые есть внутри объекта(см документацию)
+//**********функции и методы которые есть внутри объекта(см документацию)
+// const options = {
+//    name: 'test',
+//    width: 1024,
+//    height: 1024,
+//    colors: {
+//       border: 'black',
+//       bg: 'red'
+//    }
+// };
+//получаем массив с ключ-свойство
+//console.log(Object.keys(options));
+// ********ВАЖНО*****узнать сколько элементов которые появятся внутри массива 
+//console.log(Object.keys(options).length);
+
+
+
+//Мы можем создавать такие методы вручную, самостоятельно
+// const options = {
+//    name: 'test',
+//    width: 1024,
+//    height: 1024,
+//    colors: {
+//       border: 'black',
+//       bg: 'red'
+//    },
+//    makeTest: function() {
+//       console.log('Test');
+//    }
+// };
+
+// options.makeTest();
+// console.log(Object.keys(options));
+
+//******ДЕСТРУКТУРИЗАЦИЯ ОБЪЕКТА(д. - разделить на мелкие кусочки)*/
+
 const options = {
    name: 'test',
    width: 1024,
@@ -102,9 +137,13 @@ const options = {
    colors: {
       border: 'black',
       bg: 'red'
+   },
+   makeTest: function() {
+      console.log('Test');
    }
 };
-//получаем массив с ключ-свойство
-//console.log(Object.keys(options));
-//узнать сколько элементов внутри массива
-//console.log(Object.keys(options));
+
+options.makeTest();
+
+const {border, bg} = options.colors;
+console.log(border);
