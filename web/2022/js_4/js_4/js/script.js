@@ -16,11 +16,6 @@
 
 // Код возьмите из предыдущего домашнего задания
 
-
-
-//start(); 1-я функция
-
-
 let personalMovieDB = {
     count: 0,
     movies: {},
@@ -62,12 +57,36 @@ let personalMovieDB = {
             console.log(personalMovieDB);
         }
     },
+    //В методе writeYourGenres запретить пользователю нажать кнопку "отмена" или оставлять пустую строку. 
+    //Если он это сделал - возвращать его к этому же вопросу. После того, как все жанры введены - 
+    //при помощи метода forEach вывести в консоль сообщения в таком виде:
+    //"Любимый жанр #(номер по порядку, начиная с 1) - это (название из массива)"*/
     writeYourGenres: function() {
         for ( let i = 1; i <= 3; i++) {
-            personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`);
+            let genre = prompt(`Ваш любимый жанр под номером ${i}`);
+                
+                if (genre === '' || genre == null) {
+                    console.log('Вы ввели некорректные данные');
+                    i--;
+                } else {
+                    personalMovieDB.genres[i - 1] = genre; 
+                }
+        }
+        personalMovieDB.genres.forEach((item, i) => {
+            console.log(`Любимый жанр ${i + 1} - это ${item}`);
+        });
+            
+    },
+    //метод toggleVisibleMyDB, который при вызове будет проверять свойство privat. Если оно false - он
+    //переключает его в true, если true - переключает в false. Протестировать вместе с showMyDB
+    toggleVisibleMyDB: function() {
+        if (personalMovieDB.privat) {
+            personalMovieDB.privat = false;
+        } else {
+            personalMovieDB.privat = true;
         }
     }
-}
+};
 
 
 
