@@ -101,3 +101,14 @@ document.body.append(div);
 
 //-- РЕДАКТИРОВАНИИЕ ПРЯМО В ЭЛЕМЕНТЫ
 
+//вписать простой текст в элемент
+//работа с html структурой
+div.innerHTML = '<h1>Hello World</h1>';//можем еще вставлять HTML структуру
+
+//только текст от пользователя
+//div.textContent = 'Hello'; //метод только с текстом
+
+
+//-----работа с частями кода HTML - insertAdjacentHTML
+//вставить данные HTML перед элементом
+//div.insertAdjacentHTML('beforebegin','<h2>Hello</h2>');
