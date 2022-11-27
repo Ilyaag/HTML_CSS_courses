@@ -24,3 +24,19 @@ const movieDB = {
     ]
 };
 
+//1) Удалить все рекламные блоки со страницы (правая часть сайта)
+document.getElementsByClassName('promo__adv')[0].remove();
+
+//2) Изменить жанр фильма, поменять "комедия" на "драма"
+
+document.getElementsByClassName("promo__genre")[0].textContent = "Драма";
+
+// 3) Изменить задний фон постера с фильмом на изображение "bg.jpg". Оно лежит в папке img.
+// Реализовать только при помощи JS
+document.getElementsByClassName("promo__bg")[0].innerHTML = "";
+
+
+
+//ОДИН ЭЛЕМЕНТ ЗАМЕНИТЬ ДРУГИМ
+//hearts[0].replaceWith(circles[0]);
+//document.querySelectorAll('promo__bg').replaceWith('../img/bg.jpg');
