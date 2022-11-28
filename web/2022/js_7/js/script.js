@@ -7,6 +7,16 @@ const btn = document.querySelector('button');
 
 //современный
 //пользователь кликнул на элемент, после этого запуск ф-ции
-btn.addEventListener('click', () => {
-   alert('click');
+// btn.addEventListener('click', () => {
+//    alert('click');
+// });
+//события выполняются в порядке очереди, это событие будет следующим
+// btn.addEventListener('click', () => {
+//    alert('Second click');
+// });
+
+
+//cобытие при наведении мышки на элемент в консоль пишем ХОВЕР
+btn.addEventListener('mouseenter', () => {
+   console.log('Hover');
 });
