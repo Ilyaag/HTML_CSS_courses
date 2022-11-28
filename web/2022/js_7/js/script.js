@@ -16,7 +16,18 @@ const btn = document.querySelector('button');
 // });
 
 
-//cобытие при наведении мышки на элемент в консоль пишем ХОВЕР
-btn.addEventListener('mouseenter', () => {
-   console.log('Hover');
-});
+const overlay = document.querySelector('.overlay');
+// let i = 0;
+ const deliteElement = (e) => {
+ console.log(e.target);
+ console.log(e.type);
+//    i++;
+//    if (i === 1) {
+//       btn.removeEventListener('click', deliteElement);
+//    }
+ };
+
+btn.addEventListener('click', deliteElement);
+overlay.addEventListener('click', deliteElement);
+
+//ЗАКОНЧИЛ НА 16.55
