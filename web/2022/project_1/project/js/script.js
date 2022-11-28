@@ -24,19 +24,32 @@ const movieDB = {
     ]
 };
 
-//1) Удалить все рекламные блоки со страницы (правая часть сайта)
-document.getElementsByClassName('promo__adv')[0].remove();
+const adv = document.querySelectorAll('.promo__adv img'),
+      poster = document.querySelector('.promo__bg'),
+      genre = poster.querySelector('.promo__genre'),
+      movieList = document.querySelector('.promo__interactive-list');
+      //moviesNewSortingList = document.createElement('div');
 
-//2) Изменить жанр фильма, поменять "комедия" на "драма"
+adv.forEach(item => {
+    item.remove();
+});
 
-document.getElementsByClassName("promo__genre")[0].textContent = "Драма";
+genre.textContent = 'Драма';
 
-// 3) Изменить задний фон постера с фильмом на изображение "bg.jpg". Оно лежит в папке img.
-// Реализовать только при помощи JS
-document.getElementsByClassName("promo__bg")[0].innerHTML = "";
+poster.style.backgroundImage = `url('img/bg.jpg')`;
 
+// 4) Список фильмов на странице сформировать на основании данных из этого JS файла.
+// Отсортировать их по алфавиту 
+//1. Логически очищаем через innerHTML, если я туда ничего не запишу он очистится
+movieList.innerHTML = '';
 
+//5) Добавить нумерацию выведенных фильмов */
+movieDB.movies.sort();
 
-//ОДИН ЭЛЕМЕНТ ЗАМЕНИТЬ ДРУГИМ
-//hearts[0].replaceWith(circles[0]);
-//document.querySelectorAll('promo__bg').replaceWith('../img/bg.jpg');
+movieDB.movies.forEach((film, i) => {
+    movieList.innerHTML += `
+        <li class="promo__interactive-item">${i + 1} ${film}
+            <div class="delete"></div>
+        </li>
+    `;
+});
