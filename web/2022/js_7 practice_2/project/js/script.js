@@ -31,8 +31,16 @@ const movieDB = {
 const adv = document.querySelectorAll('.promo__adv img'),
       poster = document.querySelector('.promo__bg'),
       genre = poster.querySelector('.promo__genre'),
-      movieList = document.querySelector('.promo__interactive-list');
-      //moviesNewSortingList = document.createElement('div');
+      movieList = document.querySelector('.promo__interactive-list'),
+      addForm = document.querySelector('form.add'),
+      addImput = document.querySelector('.adding__input');
+      //checkbox = document.querySelector('найти через атрибуты');
+
+//console.log(addForm);
+
+
+
+
 
 adv.forEach(item => {
     item.remove();
@@ -42,12 +50,8 @@ genre.textContent = 'Драма';
 
 poster.style.backgroundImage = `url('img/bg.jpg')`;
 
-// 4) Список фильмов на странице сформировать на основании данных из этого JS файла.
-// Отсортировать их по алфавиту 
-//1. Логически очищаем через innerHTML, если я туда ничего не запишу он очистится
 movieList.innerHTML = '';
 
-//5) Добавить нумерацию выведенных фильмов */
 movieDB.movies.sort();
 
 movieDB.movies.forEach((film, i) => {
