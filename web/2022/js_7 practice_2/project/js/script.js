@@ -53,11 +53,13 @@ addForm.addEventListener('submit', (event) => {
     const favorite = checkbox.checked;
 
     movieDB.movies.push(newFilm);
-    movieDB.movies.sort();
-})
+    sortArr(movieDB.movies);
+//cейчас строим список фильмов
+    createMovieList(movieDB.movies, movieList);
 
+    event.target.reset();
 
-
+});
 
 
 const deliteAdv = (arr) => {
@@ -66,9 +68,6 @@ const deliteAdv = (arr) => {
     });
 };
 
-deliteAdv(adv);
-
-
 
 const makeChanges = () => {
     genre.textContent = 'Драма';
@@ -76,15 +75,15 @@ const makeChanges = () => {
     poster.style.backgroundImage = `url('img/bg.jpg')`;
 };
 
-makeChanges();
 
-movieDB.movies.sort();
+const sortArr = (arr) => {
+    arr.sort();
+};
 
-    function createMovieList(films, parent ) {
+
+function createMovieList(films, parent ) {
         parent.innerHTML = '';
 
-
-        
         films.forEach((film, i) => {
             parent.innerHTML += `
                 <li class="promo__interactive-item">${i + 1} ${film}
@@ -94,4 +93,7 @@ movieDB.movies.sort();
         });
     }
 //когда первый раз заходим на страницу, отображаем на странице и перебираем агрументы
+deliteAdv(adv);
+makeChanges(); 
+sortArr(movieDB.movies);
 createMovieList(movieDB.movies, movieList);
