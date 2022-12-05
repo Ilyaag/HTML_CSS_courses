@@ -59,6 +59,11 @@ addForm.addEventListener('submit', (event) => {
                 //c помощью метода строк заменить старую строчку на новый вариант
                 newFilm = `${newFilm.substring(0, 22)}...`;
             }
+//задание 5 
+            if (favorite) {
+                console.log('Добавляем любимый фильм');
+            }
+
 
         movieDB.movies.push(newFilm);
         sortArr(movieDB.movies);
@@ -92,6 +97,7 @@ const sortArr = (arr) => {
 
 function createMovieList(films, parent ) {
         parent.innerHTML = '';
+        sortArr(films);
 
         films.forEach((film, i) => {
             parent.innerHTML += `
@@ -100,9 +106,23 @@ function createMovieList(films, parent ) {
                 </li>
             `;
         });
+/*3 задание. Удаление корзинок. Вешаем обработчики событий на каждый элемент. Если пользователь кликает на нее, то удаляется родитель у этой корзинки. Вырезать фильм который был удален из базы данных. Если хотим навесить 1 событие на несколько элементов - перебираем forEach. Дальше коллбэк, говорим что надо 2 аргумента, каждая отдельная кнопка и нумерация(необходимо знать номер по порядку который удаляем)
+Внутри обращаемся к каждой корзинке, навешиваем обработчик события клика, запускаем коллбэк функцию. Далее обращаемся к родительскому элементу - удались со страницы и удаляем его из базы данных. Первый аргумент i а второй, сколько нам нужно удалить из массива
+ДОП - удалилась номерация = ВОСПОЛЬЗУЕМСЯ РЕКУРСИЕЙ(функция вызывает сама себя внутри - когда я буду удалять каждый раз элемент, вызываем функцию createMovieList и список заново перестраивается
+ДОП - у нас есть аргументы parent films - мы их скопируем
++ 5 пункт отсортировать по алфавиту
+когда мы будем запускать функцию createMovieList она будет сама себя уже сортировать
+*/
+    document.querySelectorAll('.delete').forEach((btn, i) => {
+        btn.addEventListener('click', () => {
+            btn.parentElement.remove();
+            movieDB.movies.splice(i, 1);
+            createMovieList(films, parent); 
+        });
+    });
+
     }
 //когда первый раз заходим на страницу, отображаем на странице и перебираем агрументы
 deliteAdv(adv);
 makeChanges(); 
-sortArr(movieDB.movies);
 createMovieList(movieDB.movies, movieList);
