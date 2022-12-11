@@ -130,20 +130,40 @@
 
 //******ДЕСТРУКТУРИЗАЦИЯ ОБЪЕКТА(д. - разделить на мелкие кусочки)*/
 
-const options = {
-   name: 'test',
-   width: 1024,
-   height: 1024,
-   colors: {
-      border: 'black',
-      bg: 'red'
-   },
-   makeTest: function() {
-      console.log('Test');
-   }
+// const options = {
+//    name: 'test',
+//    width: 1024,
+//    height: 1024,
+//    colors: {
+//       border: 'black',
+//       bg: 'red'
+//    },
+//    makeTest: function() {
+//       console.log('Test');
+//    }
+// };
+
+// options.makeTest();
+
+// const {border, bg} = options.colors;
+// console.log(border);
+
+// const ship1 = {
+//    name: 'MSC Seaviev',
+//    passengers: 4050,
+// };
+
+// const ship2 = {
+//    name: 'Costa Magica',
+//    passengers: 2716,
+// };
+
+// const total = ship1.passengers + ship2.passengers;
+
+const school = {
+   name: 'Fox Trail Elementary',
+   boys: 543,
+   girls: 487,
 };
 
-options.makeTest();
-
-const {border, bg} = options.colors;
-console.log(border);
+const count = school.boys + school.girls;
