@@ -160,10 +160,11 @@
 
 // const total = ship1.passengers + ship2.passengers;
 
-const school = {
-   name: 'Fox Trail Elementary',
-   boys: 543,
-   girls: 487,
+const trip = {
+   milesPerDay: 400,
+   days: 5,
+   gallonsPerMile: 0.02,
 };
 
-const count = school.boys + school.girls;
+const totalGallons = trip.milesPerDay * trip. days * trip.gallonsPerMile;
+const totalMiles = trip.milesPerDay * trip.days;
