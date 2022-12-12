@@ -160,7 +160,8 @@
 
 // const total = ship1.passengers + ship2.passengers;
 
-const a = 92;
-const b = 11;
+const num = 10;
+//const b = 12;
+const isOdd = num % 3 === 0;
 
 const areEqual = a === b;
