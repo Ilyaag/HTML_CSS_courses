@@ -160,11 +160,7 @@
 
 // const total = ship1.passengers + ship2.passengers;
 
-const trip = {
-   milesPerDay: 400,
-   days: 5,
-   gallonsPerMile: 0.02,
-};
+const a = 92;
+const b = 11;
 
-const totalGallons = trip.milesPerDay * trip. days * trip.gallonsPerMile;
-const totalMiles = trip.milesPerDay * trip.days;
+const areEqual = a === b;
